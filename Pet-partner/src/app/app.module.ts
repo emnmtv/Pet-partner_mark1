@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    SignUpComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
